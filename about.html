@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *
+        {
+            font-family: sans-serif;
+/*            font-size: 30px;*/
+            margin: 0px;
+            padding: 0px;
+        }
+       .header
+        {
+         height: 90px;
+         position: sticky;
+             top:0px;
+            background-color: white;
+        }
+       .im1
+        {
+            padding: 20px;
+            margin-left: 40px;
+        }
+        .heading
+        {
+           font-size: 30px; 
+           margin-top:-60px;
+            margin-left: 120px;
+        }
+        .menu
+        {
+            margin-top: -60px;
+            margin-left: 530px;
+        }
+        .menu ul
+        {
+            list-style: none;
+            display: inline-flex;
+        }
+        .menu ul li
+        {
+            
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            margin-top: 25px;
+            margin-right: 29px;
+        }
+        
+        .menu ul li a:hover
+        {
+            color: darkgreen;
+        }
+        .menu ul li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .active
+        {
+            
+            background-color: rgba(21, 193, 21, 0.97);
+            border-radius: 5px;
+            width: 53px;
+            height: 10px;
+        }
+        .info
+        {
+            background-color:#d9eef7;
+            height: 130px;
+        }
+        .im2
+        {
+           margin-left: 75px;
+           margin-top: 28px;
+        }
+        .location
+        {
+            margin-left: 120px;
+            margin-top: -40px;
+        }
+        p
+        {
+            font-size: 13px;
+            color: #483e3e;
+        }
+        .watch
+        {
+            margin-top: -35px;
+        }
+        .im3
+        {
+          margin-left: 300px; 
+            
+        }
+        .timings
+        {
+            margin-top: -45px;
+            margin-left: 367px;
+        }
+        .phone
+        {
+            margin-top: -45px;
+        }
+        .im4
+        {
+            margin-left: 550px;
+            
+        }
+        h5
+        {
+            font-size: 13px;
+        }
+        .nos
+        {
+            margin-left: 617px;
+            margin-top: -45px;
+        }
+        .cal
+        {
+            margin-left: 760px;
+            margin-top: -18px;
+        }
+        .know
+        {
+            margin-top: -50px;
+        }
+        .time
+        {
+            margin-left: 830px;
+            margin-top: -40px;
+        }
+        .bg
+        {
+          height: 200px;
+            filter: grayscale(40%);
+            width: 100%;
+            z-index: 1;
+        }
+        .doc
+        {
+            height: 320px;
+            width: 40%;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        .te 
+        {
+          margin-left: 700px;
+          margin-top: -330px;
+            width: 40%;
+        }
+        .te h4
+        {
+            font-size: 40px;
+        }
+        .te p
+        {
+          font-size: 22px;  
+        }
+        .im90
+        {
+            width: 50%;
+            margin-left: 674px;
+            height: 800px;
+            margin-top: 120px;
+        }
+        .abo 
+        {
+            
+            z-index: 2;
+            position:
+            relative;
+            top: -120px;
+            font-size: 50px;
+            left: 2%;
+            color: rgba(8, 8, 8, 0.99);
+            
+        }
+       .half
+        {
+            width: 50%;
+            margin-top: -804px;
+            height: 800px;
+            background-color: #f4fdfd;
+        }
+        .im91
+        {
+            height: 70px;
+            margin-left: 200px;
+        }
+        .text1
+        {
+            width: 40%;
+            margin-left: 300px;
+            margin-top: -68px;
+        }
+        .text1 h4
+        {
+            font-size: 30px;
+        }
+        .text1 p
+        {
+            font-size: 16px;
+        }
+        .text2 p
+        {
+            font-size: 16px;
+        }
+        .text3 p
+        {
+            font-size: 16px;
+        }
+        .text2 h4
+        {
+            font-size: 30px;
+        }
+        .text3 h4
+        {
+            font-size: 30px;
+        }
+        
+        .im92
+        {
+            height: 70px;
+            margin-left: 200px;
+        }
+        .text2
+        {
+            width: 40%;
+            margin-left: 300px;
+            margin-top: -60px;
+        }
+        
+        .im93
+        {
+            height: 70px;
+            margin-left: 200px;
+        }
+        .text3
+        {
+            width: 40%;
+            margin-left: 300px;
+            margin-top: -70px;
+        }
+         .footer>div{
+            line-height: 1.1;
+            display: inline;
+            float: left; 
+            border: 1px solid grey;
+               
+            color: white;
+            padding: 8px;
+        
+        }
+        
+        .txt{
+            font-size: 20px;
+            color: white;
+        }
+        
+        .footer .b1{
+            width: 31%;
+            color: white;
+            background-color: #b2b0b0;
+            height: 150px;
+            font-size: 18px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b2{
+            background-color: #848282;
+            width: 31%;
+            height: 150px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b3{
+            background-color: #676666;
+            width: 33.6%;
+            height: 150px;
+        }
+        
+        .footer ul{
+            list-style-type: none;
+        }
+        .bottom{
+            width: 99%;
+            height: 10px;
+            border: none;
+            background-color: #0e579f;
+        }
+        .designedby{
+            z-index: 3;
+            color: white;
+            position: relative;
+            top: -6px;
+            font-size: 18px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+      <div class="header">
+      <div class="im1">
+          <img src="images/logo-light.png" alt="">
+      </div>
+      <div class="heading">
+          <h6>Smile Dental Clinic</h6>
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li  class="active"><a href="about.html">About</a></li>
+             <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </div> 
+  <div class="info">
+      <div><img  class="im2" src="images/map-marker.png" alt=""></div>
+      <div class="location">
+          <h5>619 C Krishna Nagar</h5>
+          <p>Mathura U.P.</p>
+      </div>
+      <div class="watch">
+      <img class="im3" src="images/clock.png" alt="">
+      </div>
+      <div class="timings">
+          <h5>Opening Hours</h5>
+          <p>Mon-Sat:
+          <br>10am-2pm|6pm-9pm</p>
+      </div>
+      <div class="phone"><img class="im4" src="images/phone.png" alt=""></div>
+      <div class="nos">
+          <h5>+9837713971
+          <br>
+          
+              +9045620551
+          </h5>
+          <p>Call us now!</p>
+      </div>
+      <div class="cal">
+          <img class="know" src="images/calendar.png" alt="">
+      </div>
+      <div class="time">
+          <h5>Creating Smiles</h5>
+          <p>Since 1997</p>
+      </div>
+  </div>
+  <div>
+      <img  class="bg" src="images/1.jpg" alt="">
+      <h3 class="abo">ABOUT-US</h3>
+      
+  </div>
+  
+<div>
+    <img class="doc" src="images/image-2.jpg" alt="">
+</div>
+<div class="te">
+    <h4>We Care About Your Teeth</h4>
+    <br>
+    <br>
+    
+    <p>Our main objective since 25 years is the relief of our patients from pain.
+    We try to provide the best treatment possible to our patients. And this has resulted in our huge number of happy patients till date. We clearly understand that how important is a person's teeth to him or her and that's why always try to make them smile by giving them proper treatment.We have the best team of doctors that ensures the immediate cure of tooth problems without any delay.</p>
+</div>
+<div>
+    <img class="im90" src="images/featured-bg.jpg" alt="">
+</div>
+
+<div class="half">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <img class="im91" src="images/protection.png" alt="">
+    <div class="text1">
+        <h4>Affordable Care</h4>
+        <br>
+        <br>
+        <p>We always make sure that our treatment should not be out of budget for our patients. It must be in the range that even common person may also be able to get proper treatment</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <img class="im92" src="images/dentist%20(2).png" alt="">
+    <div class="text2">
+        <h4>Amazing Team</h4>
+        <br>
+        <br>
+        <p>Our team of dentists is highly experienced and well qualified. Each one of them has practiced a lot in their respective branch whether it is orthodontics or prosthodontics.</p>
+    </div>
+    <br><br><br>
+    <img class="im93" src="images/dentist%20tools.png" alt="">
+    <div class="text3">
+        <h4>Best Equipments</h4>
+        <br>
+        <br>
+        <p>We have highly advanced equipments in our clinic like X-ray machine, kjsdbfkj mndkjf ndskjfn ldnflkdnf m,ndfmn mndmnf mnfdkn nndmdsn mndsmdn </p>
+    </div>
+</div>
+<br>
+    <div style="box-sizing: border-box;" class="footer">
+        <div class="b1">
+            <p class="txt">for free teeth service please contact we provide the listed services for free without any charges ,no fees required
+            </p>
+        </div>
+        <div class="b2">
+          
+           <h2>Our Services</h2>
+           <br>
+            <ul>
+                <li>Root Canal Treatment</li>
+                <li>Braces</li>
+                <li>Wisdom Teeth</li>
+                <li>teeth cleaning</li>
+                <li>Dental Checkup</li>
+                <li>Implants</li>
+            </ul>
+        </div>
+        <div class="b3">
+            <h2>Opening Hours</h2>
+            <br>
+            <ul>
+                <li>Morning -> 10:00 AM - 02:00 PM</li>
+                
+                <li>Evening -> 5:00 PM - 8:00 PM</li>
+            </ul>
+        </div>
+       <div class="bottom">
+           <p class="designedby">Designed by Pratiksha Rawat</p>
+       </div>
+         
+     </div>
+
+</body>
+</html>
+
