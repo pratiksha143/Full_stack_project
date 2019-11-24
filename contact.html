@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+
+    <style>
+        *
+        {
+            font-family: sans-serif;
+/*            font-size: 30px;*/
+            margin: 0px;
+            padding: 0px;
+        }
+       .header
+        {
+         height: 90px;
+         position: sticky;
+             top:0px;
+            background-color: white;
+        }
+       .im1
+        {
+            padding: 20px;
+            margin-left: 40px;
+        }
+        .heading
+        {
+           font-size: 30px; 
+           margin-top:-60px;
+            margin-left: 120px;
+        }
+        .menu
+        {
+            margin-top: -60px;
+            margin-left: 530px;
+        }
+        .menu ul
+        {
+            list-style: none;
+            display: inline-flex;
+        }
+        .menu ul li
+        {
+            
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            margin-top: 25px;
+            margin-right: 29px;
+            
+        }
+        
+        .menu ul li a:hover
+        {
+            color: darkgreen;
+        }
+        .menu ul li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .active
+        {
+            
+            background-color: rgba(21, 193, 21, 0.97);
+            border-radius: 5px;
+            width: 53px;
+            height: 10px;
+        }
+        .info
+        {
+            background-color:#d9eef7;
+            height: 90px;
+        }
+        .im2
+        {
+           margin-left: 75px;
+           margin-top: 22px;
+        }
+        .location
+        {
+            margin-left: 120px;
+            margin-top: -40px;
+        }
+        p
+        {
+            font-size: 13px;
+            color: #483e3e;
+        }
+        .watch
+        {
+            margin-top: -35px;
+        }
+        .im3
+        {
+          margin-left: 300px; 
+            
+        }
+        .timings
+        {
+            margin-top: -45px;
+            margin-left: 367px;
+        }
+        .phone
+        {
+            margin-top: -45px;
+        }
+        .im4
+        {
+            margin-left: 550px;
+            
+        }
+        h5
+        {
+            font-size: 13px;
+        }
+        .nos
+        {
+            margin-left: 617px;
+            margin-top: -45px;
+        }
+        .cal
+        {
+            margin-left: 760px;
+            margin-top: -18px;
+        }
+        .know
+        {
+            margin-top: -50px;
+        }
+        .time
+        {
+            margin-left: 830px;
+            margin-top: -40px;
+        }
+        #im0
+        {
+          height: 200px;
+            
+            width: 100%;
+            z-index: 1;
+        }
+        #con 
+        {
+            
+            z-index: 2;
+            position:
+            relative;
+            top: -120px;
+            font-size: 50px;
+            left: 5%;
+        }
+        #im54
+        {
+            width: 50%;
+            margin-left: 675px;
+            filter: brightness(40%);
+        }
+        #hei
+        {
+            height: 0px;
+        }
+        #to
+        {
+            margin-left: 100px;
+            font-size: 30px;
+            margin-top: -750px;
+        }
+        #kya
+        {
+            margin-left: 100px;
+            height: 100px;
+            width: 8%;
+            margin-top: 60px;
+            
+        }
+        .add
+        {
+            margin-left: 260px;
+            margin-top: -107px;
+        }
+        .add p
+        {
+            font-size: 20px;
+        }
+     
+        #na
+        {
+            width: 500px;
+            margin-left: 100px;
+            padding: 15px;
+            background-color: lightgray;
+            margin-top: 270px;
+        }
+        #em
+        {
+          width: 490px;
+            margin-left: 100px;
+            padding: 20px;
+            background-color: lightgray;  
+            margin-top: 10px;
+        }
+        #su
+        {
+          width: 490px;
+            margin-left: 100px;
+            padding: 20px;
+            background-color: lightgray;  
+            margin-top: 10px;
+        }
+        #te
+        {
+            margin-left: 100px;
+            margin-top: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        #yes
+        {
+            margin-left: 100px;
+            margin-top: 40px;
+            padding: 20px;
+            width: 140px;
+            color: white;
+            background-color: #2ac12a;
+            border: 1px #2ac12a;
+            border-radius: 7px;
+        }
+         
+        .footer>div{
+            line-height: 1.1;
+            display: inline;
+            float: left; 
+            border: 1px solid grey;
+               
+            color: white;
+            padding: 8px;
+        
+        }
+        
+        .txt{
+            font-size: 20px;
+            color: white;
+        }
+        
+        .footer .b1{
+            width: 31%;
+            color: white;
+            background-color: #b2b0b0;
+            height: 150px;
+            font-size: 18px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b2{
+            background-color: #848282;
+            width: 31%;
+            height: 150px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b3{
+            background-color: #676666;
+            width: 33.9%;
+            height: 150px;
+        }
+        
+        .footer ul{
+            list-style-type: none;
+        }
+        .bottom{
+            width: 99%;
+            height: 10px;
+            border: none;
+            background-color: #0e579f;
+        }
+        .designedby{
+            z-index: 3;
+            color: white;
+            position: relative;
+            top: -6px;
+            font-size: 18px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+      <div class="im1">
+          <img src="images/logo-light.png" alt="">
+      </div>
+      <div class="heading">
+          <h6>Smile Dental Clinic</h6>
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+             <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li  class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </div> 
+  <div class="info">
+      <div><img  class="im2" src="images/map-marker.png" alt=""></div>
+      <div class="location">
+          <h5>619 C Krishna Nagar</h5>
+          <p>Mathura U.P.</p>
+      </div>
+      <div class="watch">
+      <img class="im3" src="images/clock.png" alt="">
+      </div>
+      <div class="timings">
+          <h5>Opening Hours</h5>
+          <p>Mon-Sat:
+          <br>10am-2pm|6pm-9pm</p>
+      </div>
+      <div class="phone"><img class="im4" src="images/phone.png" alt=""></div>
+      <div class="nos">
+          <h5>+9837713971
+          <br>
+          
+              +9045620551
+          </h5>
+          <p>Call us now!</p>
+      </div>
+      <div class="cal">
+          <img class="know" src="images/calendar.png" alt="">
+      </div>
+      <div class="time">
+          <h5>Creating Smiles</h5>
+          <p>Since 1997</p>
+      </div>
+  </div>
+   <div>
+       <img src="images/servi.jpg" id="im0" alt="">
+       <h4 id="con">Contact-Us</h4>
+   </div>
+   <div id="hei">
+       <img src="images/map_crop.jpg" style="height: 800px" id="im54" alt="">
+       <h6 id="to">Get in touch</h6>
+       <img src="images/contact.jpg" id="kya" alt="">
+       <div class="add">
+           <p>Radha Nagar Krishna Nagar MATHURA</p>
+           <br>
+           <p>904-562-0551</p>
+           <br>
+           <p>piyushrawat98@gmail.com</p>
+           
+       </div>
+   </div>
+   <br>
+   <br>
+   <div>
+   <form>
+       <input type="text" placeholder="Name" id="na">
+       <br>
+       <input type="email" placeholder="E-mail" id="em">
+       <br>
+       <input type="text" placeholder="Subject" id="su">
+       <br>
+       <textarea name="" placeholder="Message" id="te" cols="68" rows="8"></textarea>
+       <br>
+       <input type="submit" placeholder="Submit" id="yes">
+   </form>
+   </div>
+   <br><br><br>
+     <div style="box-sizing: border-box;" class="footer">
+        <div class="b1">
+            <p class="txt">for free teeth service please contact we provide the listed services for free without any charges ,no fees required
+            </p>
+        </div>
+        <div class="b2">
+          
+           <h2>Our Services</h2>
+           <br>
+            <ul>
+                <li>Root Canal Treatment</li>
+                <li>Braces</li>
+                <li>Wisdom Teeth</li>
+                <li>teeth cleaning</li>
+                <li>Dental Checkup</li>
+                <li>Implants</li>
+            </ul>
+        </div>
+        <div class="b3">
+            <h2>Opening Hours</h2>
+            <br>
+            <ul>
+                <li>Morning -> 10:00 AM - 02:00 PM</li>
+                
+                <li>Evening -> 5:00 PM - 8:00 PM</li>
+            </ul>
+        </div>
+       <div class="bottom">
+           <p class="designedby">Designed by Pratiksha Rawat</p>
+       </div>
+         
+     </div>
+</body>
+</html>
