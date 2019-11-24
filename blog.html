@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *
+        {
+            font-family: sans-serif;
+/*            font-size: 30px;*/
+            margin: 0px;
+            padding: 0px;
+        }
+       .header
+        {
+         height: 90px;
+         position: sticky;
+             top:0px;
+            background-color: white;
+        }
+       .im1
+        {
+            padding: 20px;
+            margin-left: 40px;
+        }
+        .heading
+        {
+           font-size: 30px; 
+           margin-top:-60px;
+            margin-left: 120px;
+        }
+        .menu
+        {
+            margin-top: -60px;
+            margin-left: 530px;
+        }
+        .menu ul
+        {
+            list-style: none;
+            display: inline-flex;
+        }
+        .menu ul li
+        {
+            
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            margin-top: 25px;
+            margin-right: 29px;
+        }
+        
+        .menu ul li a:hover
+        {
+            color: darkgreen;
+        }
+        .menu ul li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .active
+        {
+            
+            background-color: rgba(21, 193, 21, 0.97);
+            border-radius: 5px;
+            width: 53px;
+            height: 10px;
+        }
+        .info
+        {
+            background-color:#d9eef7;
+            height: 90px;
+        }
+        .im2
+        {
+           margin-left: 75px;
+           margin-top: 22px;
+        }
+        .location
+        {
+            margin-left: 120px;
+            margin-top: -40px;
+        }
+        p
+        {
+            font-size: 13px;
+            color: #483e3e;
+        }
+        .watch
+        {
+            margin-top: -35px;
+        }
+        .im3
+        {
+          margin-left: 300px; 
+            
+        }
+        .timings
+        {
+            margin-top: -45px;
+            margin-left: 367px;
+        }
+        .phone
+        {
+            margin-top: -45px;
+        }
+        .im4
+        {
+            margin-left: 550px;
+            
+        }
+        h5
+        {
+            font-size: 13px;
+        }
+        .nos
+        {
+            margin-left: 617px;
+            margin-top: -45px;
+        }
+        .cal
+        {
+            margin-left: 760px;
+            margin-top: -18px;
+        }
+        .know
+        {
+            margin-top: -50px;
+        }
+        .time
+        {
+            margin-left: 830px;
+            margin-top: -40px;
+        }
+        #im2
+        {
+            height: 450px;
+            width: 100%;
+            z-index: 1
+        }
+        #bl
+        {
+            margin-left: 900px;
+            font-size: 46px;
+            z-index: 2;
+            position: relative;
+            top: -200px;
+        }
+        .large
+        {
+            height: 1400px;
+            background-color: #dae9f7;
+        }
+        #again
+        {
+            height: 350px;
+            width: 45%;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        #post
+        {
+            font-size: 23px;
+            margin-left: 740px;
+            margin-top: -350px;
+        }
+        .large h6
+        {
+            font-size: 30px;
+            margin-left: 740px;
+            margin-top: 10px;
+        }
+        #ad
+        {
+            width: 37%;
+            margin-left: 740px;
+            font-size: 24px;
+        }
+        #god
+        {
+            height: 350px;
+            width: 45%;
+            margin-left: 100px;
+            margin-top: 80px;
+        }
+        #st
+        {
+            font-size: 23px;
+            margin-left: 740px;
+            margin-top: -350px;
+        }
+        #five
+        {
+            width: 37%;
+            margin-left: 740px;
+            font-size: 24px;
+        }
+        #arey
+        {
+            height: 350px;
+            width: 45%;
+            margin-left: 100px;
+            margin-top: 80px;
+        }
+        #yo
+        {
+            font-size: 23px;
+            margin-left: 740px;
+            margin-top: -350px;
+        }
+         #aga
+        {
+            width: 37%;
+            margin-left: 740px;
+            font-size: 24px;
+        }
+         .footer>div{
+            line-height: 1.1;
+            display: inline;
+            float: left; 
+            border: 1px solid grey;
+               
+            color: white;
+            padding: 8px;
+        
+        }
+        
+        .txt{
+            font-size: 20px;
+            color: white;
+        }
+        
+        .footer .b1{
+            width: 31%;
+            color: white;
+            background-color: #b2b0b0;
+            height: 150px;
+            font-size: 18px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b2{
+            background-color: #848282;
+            width: 31%;
+            height: 150px;
+/*            border-right: 2px solid lightgreen;*/
+        }
+        .footer .b3{
+            background-color: #676666;
+            width: 33.9%;
+            height: 150px;
+        }
+        
+        .footer ul{
+            list-style-type: none;
+        }
+        .bottom{
+            width: 99%;
+            height: 10px;
+            border: none;
+            background-color: #0e579f;
+        }
+        .designedby{
+            z-index: 3;
+            color: white;
+            position: relative;
+            top: -6px;
+            font-size: 18px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+      <div class="header">
+      <div class="im1">
+          <img src="images/logo-light.png" alt="">
+      </div>
+      <div class="heading">
+          <h6>Smile Dental Clinic</h6>
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+             <li><a href="service.html">Service</a></li>
+              <li  class="active"><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </div> 
+  <div class="info">
+      <div><img  class="im2" src="images/map-marker.png" alt=""></div>
+      <div class="location">
+          <h5>619 C Krishna Nagar</h5>
+          <p>Mathura U.P.</p>
+      </div>
+      <div class="watch">
+      <img class="im3" src="images/clock.png" alt="">
+      </div>
+      <div class="timings">
+          <h5>Opening Hours</h5>
+          <p>Mon-Sat:
+          <br>10am-2pm|6pm-9pm</p>
+      </div>
+      <div class="phone"><img class="im4" src="images/phone.png" alt=""></div>
+      <div class="nos">
+          <h5>+9837713971
+          <br>
+          
+              +9045620551
+          </h5>
+          <p>Call us now!</p>
+      </div>
+      <div class="cal">
+          <img class="know" src="images/calendar.png" alt="">
+      </div>
+      <div class="time">
+          <h5>Creating Smiles</h5>
+          <p>Since 1997</p>
+      </div>
+  </div>
+  <div>
+      <img src="images/back.jpg" id="im2" alt="">
+      <h4 id="bl"><u>Blog Section</u></h4>
+  </div>
+  <div class="large">
+      <img src="images/blog-1.jpg" id="again" alt="">
+      <p id="post"><i><u>Posted on:21st Sept. 2018</u></i></p>
+      <h6>How to get whiter teeth in 2 weeks</h6>
+      <br>
+      <p id="ad">Regular brushing and flossing can help your teeth stay white by reducing bacteria in your mouth and preventing plaque build-up.
+      Toothpaste gently rubs out stains on your teeth, and flossing removes bacteria that lead to plaque. Regular dental cleanings can also help your teeth stay clean and white.</p>
+      <br><br><br>
+      <img src="images/image-4.jpg" id="god" alt="">
+       <p id="st"><i><u>Posted on:25th Feb. 2015</u></i></p>
+       <h6>5 Tips for better teeth</h6>
+       <br>
+       <p id="five">1.Brush and Floss Twice a day<br>
+2.Drink Lots of Water<br>3.Avoid Sugary Foods<br>4.Get Regular Calcium and Vitamin D <br>5.See A Dentist Every 6 Months!
+</p>
+<br><br><br><br><br><br>
+ <img src="images/blog-3.jpg" id="arey" alt="">
+ <p id="yo"><i><u>Posted on:17th july 2010</u></i></p>
+ <h6>Take care of your smile</h6>
+ <br>
+ <p id="aga">I assure the patients for the best treatment.
+      
+       Dentists in the clinic are highly  experienced 
+       
+       and their goal is to provide relief  to the patients as soon as possible.</p>
+  </div>
+  <br>
+     <div style="box-sizing: border-box;" class="footer">
+        <div class="b1">
+            <p class="txt">for free teeth service please contact we provide the listed services for free without any charges ,no fees required
+            </p>
+        </div>
+        <div class="b2">
+          
+           <h2>Our Services</h2>
+           <br>
+            <ul>
+                <li>Root Canal Treatment</li>
+                <li>Braces</li>
+                <li>Wisdom Teeth</li>
+                <li>teeth cleaning</li>
+                <li>Dental Checkup</li>
+                <li>Implants</li>
+            </ul>
+        </div>
+        <div class="b3">
+            <h2>Opening Hours</h2>
+            <br>
+            <ul>
+                <li>Morning -> 10:00 AM - 02:00 PM</li>
+                
+                <li>Evening -> 5:00 PM - 8:00 PM</li>
+            </ul>
+        </div>
+       <div class="bottom">
+           <p class="designedby">Designed by Pratiksha Rawat</p>
+       </div>
+         
+     </div>
+</body>
+</html>
